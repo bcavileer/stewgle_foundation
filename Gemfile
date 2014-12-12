@@ -32,6 +32,7 @@ group :development do
   gem 'guard-bundler', require: false
   gem 'guard-livereload', require: false
   gem 'guard-rspec', require: false
+  gem 'guard-teaspoon', require: false
   gem 'meta_request'
   gem 'rack-livereload'
 end
@@ -43,6 +44,7 @@ group :development, :test do
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
+  gem 'teaspoon'
   gem 'pry-rails'
   gem 'pry-plus', { github: 'avantcredit/pry-plus' }
 end

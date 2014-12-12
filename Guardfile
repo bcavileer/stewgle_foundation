@@ -16,6 +16,19 @@
 #  * zeus: 'zeus rspec' (requires the server to be started separately)
 #  * 'just' rspec: 'rspec'
 
+guard :bundler do
+  watch('Gemfile')
+end
+
+guard :livereload do
+  watch(%r{app/views/.+\.(erb|haml|slim)$})
+  watch(%r{app/helpers/.+\.rb})
+  watch(%r{public/.+\.(css|js|html)})
+  watch(%r{config/locales/.+\.yml})
+  # Rails Assets Pipeline
+  watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html|png|jpg))).*}) { |m| "/assets/#{m[3]}" }
+end
+
 guard :rspec, cmd:"spring rspec" do
   require "ostruct"
 
@@ -59,15 +72,10 @@ guard :rspec, cmd:"spring rspec" do
   watch(rails.views)     { |m| rspec.spec.("features/#{m[1]}") }
 end
 
-guard 'livereload' do
-  watch(%r{app/views/.+\.(erb|haml|slim)$})
-  watch(%r{app/helpers/.+\.rb})
-  watch(%r{public/.+\.(css|js|html)})
-  watch(%r{config/locales/.+\.yml})
-  # Rails Assets Pipeline
-  watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html|png|jpg))).*}) { |m| "/assets/#{m[3]}" }
-end
+guard :teaspoon do
+  # Implementation files
+  watch(%r{^app/assets/javascripts/(.+).js}) { |m| "#{m[1]}_spec" }
 
-guard :bundler do
-  watch('Gemfile')
+  # Specs / Helpers
+  watch(%r{^spec/javascripts/(.*)})
 end
