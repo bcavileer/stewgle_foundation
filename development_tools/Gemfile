@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'annotate'
+gem 'bumbler'
+gem 'clipboard'
+gem 'forgery'
+gem 'git-pivotal-tracker-integration'
+gem 'mailcatcher'
+gem 'metric_fu'
+gem 'yard'
