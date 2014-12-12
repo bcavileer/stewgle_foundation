@@ -1,4 +1,24 @@
 GIT
+  remote: git://github.com/apotonick/cells.git
+  revision: 9e3c5791137011a3b30b86e1766a56bf27c4c243
+  specs:
+    cells (4.0.0.alpha1)
+      actionpack (>= 3.2)
+      railties (>= 3.2)
+      tilt (>= 1.4, < 3)
+      uber (~> 0.0.9)
+
+GIT
+  remote: git://github.com/apotonick/trailblazer.git
+  revision: da47f555da61e7eded6c2c1b49f5ea4923ce2119
+  specs:
+    trailblazer (0.1.1)
+      actionpack (>= 3.0.0)
+      reform (~> 1.2.0)
+      representable (>= 2.1.1, < 2.2.0)
+      uber (>= 0.0.10)
+
+GIT
   remote: git://github.com/avantcredit/pry-plus.git
   revision: f3844a8dd9862e9fd01d77d7bcbc7597cbb8f1c4
   specs:
@@ -118,6 +138,9 @@ GEM
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
+    disposable (0.0.9)
+      representable (~> 2.0)
+      uber
     docile (1.1.5)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -348,6 +371,15 @@ GEM
       parser (~> 2.2.0.pre.7)
       rainbow (>= 1.99, < 3.0)
       unparser (~> 0.1.16)
+    reform (1.2.3)
+      activemodel
+      disposable (~> 0.0.5)
+      representable (~> 2.1.0)
+      uber (~> 0.0.11)
+    representable (2.1.3)
+      multi_json
+      nokogiri
+      uber (~> 0.0.7)
     require_all (1.3.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -431,6 +463,7 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uber (0.0.11)
     uglifier (2.6.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -461,6 +494,7 @@ DEPENDENCIES
   bumbler
   byebug
   capybara
+  cells!
   clipboard
   coffee-rails (~> 4.1.0)
   database_cleaner
@@ -491,6 +525,7 @@ DEPENDENCIES
   spring
   spring-commands-rspec
   teaspoon
+  trailblazer!
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

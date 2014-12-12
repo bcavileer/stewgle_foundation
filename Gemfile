@@ -39,6 +39,9 @@ group :development do
   gem 'quiet_assets'
 end
 
+gem 'trailblazer', github: 'apotonick/trailblazer'
+gem 'cells', github: 'apotonick/cells'
+
 group :development, :test do
   gem 'bullet'
   gem 'byebug'
