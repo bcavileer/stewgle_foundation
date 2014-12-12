@@ -47,3 +47,7 @@ group :development, :test do
   gem 'guard-rspec'
 end
 
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+end
