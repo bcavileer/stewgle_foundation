@@ -36,6 +36,7 @@ group :development do
   gem 'guard-teaspoon', require: false
   gem 'meta_request'
   gem 'rack-livereload'
+  gem 'quiet_assets'
 end
 
 group :development, :test do
