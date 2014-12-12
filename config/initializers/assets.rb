@@ -10,7 +10,8 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
+Rails.application.config.assets.precompile += %w( vendor/modernizr )
+
 if Rails.env.development? || Rails.env.test?
   Rails.application.config.assets.precompile += %w( teaspoon.css jasmine/1.3.1.js teaspoon-jasmine.js )
 end
-

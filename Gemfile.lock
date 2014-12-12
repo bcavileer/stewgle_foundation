@@ -136,6 +136,9 @@ GEM
       sexp_processor (~> 4.4)
     forgery (0.6.0)
     formatador (0.2.5)
+    foundation-rails (5.4.5.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     git-pivotal-tracker-integration (1.4.0)
       highline (~> 1.6)
       pivotal-tracker (~> 0.5)
@@ -460,6 +463,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   database_cleaner
   forgery
+  foundation-rails
   git-pivotal-tracker-integration
   guard-bundler
   guard-livereload
