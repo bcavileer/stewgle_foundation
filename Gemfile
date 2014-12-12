@@ -24,6 +24,7 @@ group :tools do
   gem 'git-pivotal-tracker-integration', require: false
   gem 'mailcatcher', require: false
   gem 'metric_fu', require: false
+  gem 'pessimize', require: false
   gem 'yard', require: false
 end
 

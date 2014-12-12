@@ -244,6 +244,9 @@ GEM
     parser (2.2.0.pre.8)
       ast (>= 1.1, < 3.0)
       slop (~> 3.4, >= 3.4.5)
+    pessimize (0.1.0)
+      bundler
+      trollop
     pg (0.17.1)
     pivotal-tracker (0.5.12)
       builder
@@ -413,6 +416,7 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
+    trollop (2.0)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -460,6 +464,7 @@ DEPENDENCIES
   mailcatcher
   meta_request
   metric_fu
+  pessimize
   pg
   poltergeist
   pry-plus!
