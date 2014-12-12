@@ -46,7 +46,10 @@ group :development, :test do
 
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
+  gem 'guard'
   gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
 end
 
 group :test do

@@ -44,4 +44,6 @@ Rails.application.configure do
     Bullet.alert = true
     Bullet.bullet_logger = true
   end
+
+  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 end
