@@ -1,1 +1,6 @@
 <%# add navigation links to this file %>
+<ul class="left">
+  <% unless current_user %>
+    <li><a href="<%= user_omniauth_authorize_path(provider: :holman) %>">Login</a></li>
+  <% end %>
+</ul>

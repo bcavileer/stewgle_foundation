@@ -10,6 +10,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'foundation-rails'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-oauth2'
+gem 'figaro'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -37,6 +41,7 @@ group :development do
   gem 'meta_request'
   gem 'rack-livereload'
   gem 'quiet_assets'
+  gem 'rails_layout'
 end
 
 gem 'trailblazer', github: 'apotonick/trailblazer'
